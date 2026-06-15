@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduLearn – C Programming Notes</title>
+    <style>
+        *{
+
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+            color:#333;
+        }
+        header{
+            background:#0d47a1;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+        header h1{
+            font-size:40px;
+            letter-spacing:2px;
+        }
+        header p{
+            margin-top:8px;
+            font-size:18px;
+        }
+        nav{
+            background:#1565c0;
+            padding:10px;
+            text-align:center;
+        }
+        nav a{
+            color:white;
+            margin:10px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        nav a:hover{
+            text-decoration:underline;
+        }
+        .container{
+            padding:30px;
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap:20px;
+        }
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:transform 0.3s;
+        }
+        .card:hover{
+            transform:translateY(-8px);
+        }
+        .card h2{
+            color:#0d47a1;
+            margin-bottom:10px;
+        }
+        .card p{
+            font-size:14px;
+            margin-bottom:15px;
+        }
+        .card a{
+            display:inline-block;
+            padding:8px 15px;
+            background:#0d47a1;
+            color:white;
+            border-radius:20px;
+            text-decoration:none;
+            font-size:14px;
+        }
+        .card a:hover{
+            background:#08306b;
+        }
+        footer{
+            background:#0d47a1;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+        section{
+            padding:30px;
+        }
+        section h2{
+            color:#0d47a1;
+            margin-bottom:10px;
+        }
+        section pre{
+            background:#f5f5f5;
+            padding:15px;
+            border-radius:8px;
+            overflow-x:auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EduLearn</h1>
+    <p>Learn C Programming – Part Wise Notes for Beginners</p>
+</header>
+
+<nav>
+    <a href="#variables">Variables</a>
+    <a href="#ifelse">If Else</a>
+    <a href="#loops">Loops</a>
+    <a href="#patterns">Patterns</a>
+    <a href="#functions">Functions</a>
+    <a href="#array">Array</a>
+    <a href="#array2">2D Array</a>
+    <a href="#string">String</a>
+    <a href="#structure">Structure</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>Part 1: Variables & Operators</h2>
+        <p>Learn about variables, data types, and operators in C programming.</p>
+        <a href="08_PAGE.html">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 2: If Else</h2>
+        <p>Understand decision making using if, if-else and nested if.</p>
+        <a href="#ifelse">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 3: Loops</h2>
+        <p>Learn looping concepts like for, while and do-while.</p>
+        <a href="#loops">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 4: Pattern Printing</h2>
+        <p>Print star and number patterns using loops.</p>
+        <a href="#patterns">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 5: Functions</h2>
+        <p>Understand functions, types and function calls.</p>
+        <a href="#functions">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 6: Array</h2>
+        <p>Learn 1D arrays and how to store multiple values.</p>
+        <a href="#array">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 7: 2D Array</h2>
+        <p>Understand two dimensional arrays with examples.</p>
+        <a href="#array2">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 8: String</h2>
+        <p>Work with strings and string functions in C.</p>
+        <a href="#string">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 9: Structure</h2>
+        <p>Learn structure to store different data types together.</p>
+        <a href="#structure">Read Notes</a>
+    </div>
+</div>
+
+<section id="variables">
+    <h2>Variables & Operators</h2>
+    <p>Variables are used to store data values.</p>
+    <pre>
+int a = 10;
+float b = 5.5;
+char c = 'A';
+    </pre>
+</section>
+
+<section id="ifelse">
+    <h2>If Else Statement</h2>
+    <pre>
+if(a > b)
+{
+    printf("A is greater");
+}
+else
+{
+    printf("B is greater");
+}
+    </pre>
+</section>
+
+<section id="loops">
+    <h2>Loops</h2>
+    <pre>
+for(int i=1;i<=5;i++)
+{
+    printf("%d", i);
+}
+    </pre>
+</section>
+
+<section id="patterns">
+    <h2>Pattern Printing</h2>
+    <pre>
+for(int i=1;i<=5;i++)
+{
+    for(int j=1;j<=i;j++)
+    {
+        printf("*");
+    }
+    printf("\n");
+}
+    </pre>
+</section>
+
+<section id="functions">
+    <h2>Functions</h2>
+    <pre>
+int add(int a, int b)
+{
+    return a+b;
+}
+    </pre>
+</section>
+
+<section id="array">
+    <h2>Array</h2>
+    <pre>
+int arr[5] = {1,2,3,4,5};
+    </pre>
+</section>
+
+<section id="array2">
+    <h2>2D Array</h2>
+    <pre>
+int a[2][2] = {{1,2},{3,4}};
+    </pre>
+</section>
+
+<section id="string">
+    <h2>String</h2>
+    <pre>
+char name[20] = "EduLearn";
+    </pre>
+</section>
+
+<section id="structure">
+    <h2>Structure</h2>
+    <pre>
+struct student
+{
+    int roll;
+    char name[20];
+};
+    </pre>
+</section>
+
+<footer>
+    <p>© 2026 EduLearn | Learn C Programming Easily</p>
+</footer>
+
+</body>
+</html>

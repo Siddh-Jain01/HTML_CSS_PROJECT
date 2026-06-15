@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduLearn – JavaScript Notes</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: linear-gradient(to right, #fff3e0, #e3f2fd);
+            color:#333;
+        }
+        header{
+            background:#e65100;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+        header h1{
+            font-size:40px;
+            letter-spacing:2px;
+        }
+        header p{
+            margin-top:8px;
+            font-size:18px;
+        }
+        nav{
+            background:#ef6c00;
+            padding:10px;
+            text-align:center;
+        }
+        nav a{
+            color:white;
+            margin:10px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        nav a:hover{
+            text-decoration:underline;
+        }
+        .container{
+            padding:30px;
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap:20px;
+        }
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:transform 0.3s;
+        }
+        .card:hover{
+            transform:translateY(-8px);
+        }
+        .card h2{
+            color:#e65100;
+            margin-bottom:10px;
+        }
+        .card p{
+            font-size:14px;
+            margin-bottom:15px;
+        }
+        .card a{
+            display:inline-block;
+            padding:8px 15px;
+            background:#e65100;
+            color:white;
+            border-radius:20px;
+            text-decoration:none;
+            font-size:14px;
+        }
+        .card a:hover{
+            background:#bf360c;
+        }
+        section{
+            padding:30px;
+        }
+        section h2{
+            color:#e65100;
+            margin-bottom:10px;
+        }
+        section pre{
+            background:#f5f5f5;
+            padding:15px;
+            border-radius:8px;
+            overflow-x:auto;
+        }
+        footer{
+            background:#e65100;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EduLearn</h1>
+    <p>JavaScript – Beginner to Intermediate Notes</p>
+</header>
+
+<nav>
+    <a href="#intro">Introduction</a>
+    <a href="#variables">Variables</a>
+    <a href="#operators">Operators</a>
+    <a href="#condition">Conditions</a>
+    <a href="#loops">Loops</a>
+    <a href="#function">Functions</a>
+    <a href="#array">Array</a>
+    <a href="#dom">DOM</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>Part 1: JavaScript Introduction</h2>
+        <p>Basics of JavaScript and its uses.</p>
+        <a href="#intro">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 2: Variables</h2>
+        <p>Store data using var, let and const.</p>
+        <a href="#variables">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 3: Operators</h2>
+        <p>Arithmetic and logical operators.</p>
+        <a href="#operators">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 4: Conditions</h2>
+        <p>Decision making using if else.</p>
+        <a href="#condition">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 5: Loops</h2>
+        <p>Repeat tasks using loops.</p>
+        <a href="#loops">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 6: Functions</h2>
+        <p>Reusable blocks of code.</p>
+        <a href="#function">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 7: Arrays</h2>
+        <p>Store multiple values in one variable.</p>
+        <a href="#array">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 8: DOM Manipulation</h2>
+        <p>Interact with HTML using JavaScript.</p>
+        <a href="#dom">Read Notes</a>
+    </div>
+</div>
+
+<section id="intro">
+    <h2>JavaScript Introduction</h2>
+    <pre>
+JavaScript is a scripting language used to create dynamic web pages.
+It runs inside the browser.
+    </pre>
+</section>
+
+<section id="variables">
+    <h2>Variables</h2>
+    <pre>
+let a = 10;
+const b = 20;
+var c = 30;
+    </pre>
+</section>
+
+<section id="operators">
+    <h2>Operators</h2>
+    <pre>
+let sum = a + b;
+let isTrue = (a > b);
+    </pre>
+</section>
+
+<section id="condition">
+    <h2>Conditional Statements</h2>
+    <pre>
+if(a > b){
+  console.log("A is greater");
+}else{
+  console.log("B is greater");
+}
+    </pre>
+</section>
+
+<section id="loops">
+    <h2>Loops</h2>
+    <pre>
+for(let i=1;i<=5;i++){
+  console.log(i);
+}
+    </pre>
+</section>
+
+<section id="function">
+    <h2>Functions</h2>
+    <pre>
+function add(x, y){
+  return x + y;
+}
+    </pre>
+</section>
+
+<section id="array">
+    <h2>Arrays</h2>
+    <pre>
+let arr = [1,2,3,4,5];
+    </pre>
+</section>
+
+<section id="dom">
+    <h2>DOM Manipulation</h2>
+    <pre>
+document.getElementById("demo").innerHTML = "Hello JS";
+    </pre>
+</section>
+
+<footer>
+    <p>© 2026 EduLearn | JavaScript Made Easy</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <title>EduLearn | Online Courses</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background:#f4f7fb;
+            color:#333;
+        }
+        header{
+            background:linear-gradient(135deg,#4f46e5,#6366f1);
+            color:#fff;
+            padding:20px ;
+        }
+        header h1{
+            font-size:32px;
+        }
+        nav{
+            margin-top:50px;
+        }
+        nav a{
+            color:#fff;
+            padding:30px;
+            margin-left:125px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        nav a:hover{
+            text-decoration:underline;
+        }
+        .hero{
+            padding:60px 10%;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:30px;
+        }
+        .hero-text h2{
+            font-size:36px;
+            margin-bottom:15px;
+        }
+        .hero-text p{
+            font-size:18px;
+            line-height:1.6;
+            margin-bottom:20px;
+        }
+        .hero-text a{
+            background:#4f46e5;
+            color:#fff;
+            padding:12px 25px;
+            border-radius:6px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        .hero-text a:hover{
+            background:#4338ca;
+        }
+        .edu-pic{
+            background:#fff;
+            padding:60px;
+            display: flex;
+        
+            border-radius:12px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.1);
+            max-width:350px;
+        }
+        .hero-box{
+            background:#fff;
+            padding:30px;
+            
+            margin-left: 380px;
+            border-radius:12px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.1);
+            max-width:450px;
+        }
+        section{
+            padding:60px 10%;
+        }
+        section h2{
+            text-align:center;
+            font-size:32px;
+            margin-bottom:40px;
+        }
+        .courses{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+        .course-card{
+            background:#fff;
+            border-radius:12px;
+            padding:25px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.08);
+            transition:transform 0.3s;
+        }
+        .course-card:hover{
+            transform:translateY(-8px);
+        }
+        .course-card h3{
+            margin-bottom:10px;
+            color:#4f46e5;
+        }
+        .course-card p{
+            font-size:15px;
+            line-height:1.5;
+            margin-bottom:15px;
+        }
+        .price{
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+        .course-card a{
+            display:inline-block;
+            background:#4f46e5;
+            color:#fff;
+            padding:10px 20px;
+            border-radius:5px;
+            text-decoration:none;
+            font-size:14px;
+        }
+        .course-card a:hover{
+            background:#4338ca;
+        }
+        .experts{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:25px;
+        }
+        .expert-card{
+            background:#fff;
+            padding:25px;
+            border-radius:12px;
+            text-align:center;
+            box-shadow:0 8px 20px rgba(0,0,0,0.08);
+        }
+        .expert-card img{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            margin-bottom:15px;
+        }
+        .expert-card h3{
+            margin-bottom:5px;
+        }
+        .expert-card p{
+            font-size:14px;
+            color:#666;
+        }
+        .info{
+            background:#eef2ff;
+            border-radius:12px;
+            padding:40px;
+            text-align:center;
+        }
+        footer{
+            background:#111827;
+            color:#d1d5db;
+            padding:30px 10%;
+            text-align:center;
+        }
+        footer p{
+            margin-top:10px;
+            font-size:14px;
+        }
+        .header-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.search-box{
+    display:flex;
+}
+
+.search-box input{
+    padding:8px 12px;
+    border:none;
+    outline:none;
+    border-radius:5px 0 0 5px;
+    font-size:14px;
+}
+
+.search-box button{
+    padding:8px 15px;
+    border:none;
+    background:#4338ca;
+    color:#fff;
+    border-radius:0 5px 5px 0;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.search-box button:hover{
+    background:#3730a3;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header-top">
+        <h1>EduLearn</h1>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search courses...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#experts">Experts</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+<div
+ class="hero">
+    <div class="hero-text">
+        <h2>Learn Programing From Experts</h2>
+        <p>EduLearn is an online education platform where you can purchase courses and get access to video lectures and detailed notes prepared by industry experts.</p>
+        <a href="#courses">Explore Courses</a>
+    </div>
+    <div class="edu-pic">
+        <img src="edulearnpic.jpg" alt="Online Learning" style="width:100%;border-radius:10px;margin-bottom:15px;">  
+    </div>
+    <br>
+    <br>
+</div>
+    <div class="hero-box">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Online Learning" style="width:100%;border-radius:10px;margin-bottom:15px;">
+        <h3>Why Choose EduLearn?</h3>
+        <p>✔ Beginner to Advanced Courses</p>
+        <p>✔ Notes & Lecture Access</p>
+        <p>✔ Expert Instructors</p>
+        <p>✔ Certificate of Completion</p>
+    </div>
+
+<section id="courses">
+    <h2>Our Popular Courses</h2>
+    <div
+     class="courses">
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="C Programming" style="width:100%;border-radius:8px;margin-bottom:15px;">
+            <h3>C Programming</h3>
+            <p>Learn fundamentals of C programming including loops, arrays, functions, and pointers.</p>
+            <div class="price">Price: ₹999 </div>
+            <a href="03_PAGE.html">Purchase Course</a>
+        </div>
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="C Programming" style="width:100%;border-radius:8px;margin-bottom:15px;">
+            <h3>Java Programming</h3>
+            <p>Master object-oriented programming concepts and build real-world Java applications.</p>
+            <div class="price">Price: ₹999 </div>
+            <a href="04_PAGE.html">Purchase Course</a>
+        </div>
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="C Programming" style="width:100%;border-radius:8px;margin-bottom:15px;">
+            <h3>HTML</h3>
+            <p>Learn to create structured and semantic web pages using HTML5 & Design , Color .</p>
+            <div class="price">Price: ₹999 </div>
+            <a href="05_PAGE.html">Purchase Course</a>
+        </div>
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="C Programming" style="width:100%;border-radius:8px;margin-bottom:15px;">
+            <h3>CSS</h3>
+            <p>Design beautiful and responsive websites using modern CSS techniques..</p>
+            <div class="price">Price: ₹999 </div>
+            <a href="06_PAGE.html">Purchase Course</a>
+        </div>
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="C Programming" style="width:100%;border-radius:8px;margin-bottom:15px;">
+            <h3>JavaScript</h3>
+            <p>Understand core JavaScript concepts for web development (logic only, no frameworks).</p>
+            <div class="price">Price: ₹999 </div>
+            <a href="07_PAGE.html">Purchase Course</a>
+        </div>
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="C Programming" style="width:100%;border-radius:8px;margin-bottom:15px;">
+            <h3>R</h3>
+            <p>Used for statistics, data analysis, and data visualization and widely used by data analysts.</p>
+            <div class="price">Price: ₹999 </div>
+            <a href="page7.html">Purchase Course</a>
+        </div>
+    </div>
+</section>
+<section
+ id="c-course">
+            
+    <h2>All Programming - Notes Available </h2>
+    <div class="info">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Coding Video" style="width:100%;max-width:600px;border-radius:12px;margin-bottom:20px;">
+        
+    <h1> Our Experts</h1>
+    <br>
+    <div class="experts">
+        <div class="expert-card">
+            <img src="umeshsir.jpeg" alt="Expert">
+            <h3>Medhavi Bhargava</h3>
+            <p>C & System Programming Expert<br>10+ Years Experience</p>
+        </div>
+        <div class="expert-card">
+            <img src="ankitsir.jpeg" alt="Expert">
+            <h3>Nandini Sharma</h3>
+            <p>Java Developer<br>8+ Years Experience</p>
+        </div>
+        <div class="expert-card">
+            <img src="princesir.jpeg" alt="Expert">
+            <h3>Arachana Darwai </h3>
+            <p>Frontend Specialist (HTML & CSS)<br>6+ Years Experience</p>
+        </div>
+        <div class="expert-card">
+            <img src="komalmam.jpeg" alt="Expert">
+            <h3>Mangala Sharma</h3>
+            <p>JavaScript Trainer<br>7+ Years Experience</p>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="info">
+        <h2>How It Works</h2>
+        <p>1. Choose your course</p>
+        <p>2. Purchase the course</p>
+        <p>3. Get access to recorded lectures and notes</p>
+        <pre>  4. Learn at your own place</pre>
+    </div>
+</section>
+<footer>
+    <h3>EduLearn</h3>
+    <p>© 2026 EduLearn. All Rights Reserved.</p>
+    <p>This website is created using HTML and CSS only (No JavaScript).</p>
+</footer>
+</body>
+</html>
