@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduLearn – HTML Notes</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: linear-gradient(to right, #fff3e0, #e3f2fd);
+            color:#333;
+        }
+        header{
+            background:#e65100;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+        header h1{
+            font-size:40px;
+            letter-spacing:2px;
+        }
+        header p{
+            margin-top:8px;
+            font-size:18px;
+        }
+        nav{
+            background:#ef6c00;
+            padding:10px;
+            text-align:center;
+        }
+        nav a{
+            color:white;
+            margin:10px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        nav a:hover{
+            text-decoration:underline;
+        }
+        .container{
+            padding:30px;
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap:20px;
+        }
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:transform 0.3s;
+        }
+        .card:hover{
+            transform:translateY(-8px);
+        }
+        .card h2{
+            color:#e65100;
+            margin-bottom:10px;
+        }
+        .card p{
+            font-size:14px;
+            margin-bottom:15px;
+        }
+        .card a{
+            display:inline-block;
+            padding:8px 15px;
+            background:#e65100;
+            color:white;
+            border-radius:20px;
+            text-decoration:none;
+            font-size:14px;
+        }
+        .card a:hover{
+            background:#bf360c;
+        }
+        section{
+            padding:30px;
+        }
+        section h2{
+            color:#e65100;
+            margin-bottom:10px;
+        }
+        section pre{
+            background:#f5f5f5;
+            padding:15px;
+            border-radius:8px;
+            overflow-x:auto;
+        }
+        footer{
+            background:#e65100;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EduLearn</h1>
+    <p>HTML – Complete Beginner Notes</p>
+</header>
+
+<nav>
+    <a href="#intro">Introduction</a>
+    <a href="#structure">Structure</a>
+    <a href="#text">Text Tags</a>
+    <a href="#list">Lists</a>
+    <a href="#link">Links</a>
+    <a href="#image">Images</a>
+    <a href="#table">Tables</a>
+    <a href="#form">Forms</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>Part 1: HTML Introduction</h2>
+        <p>Learn what HTML is and why it is used.</p>
+        <a href="#intro">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 2: HTML Structure</h2>
+        <p>Basic structure of an HTML document.</p>
+        <a href="#structure">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 3: Text Formatting</h2>
+        <p>Headings, paragraph, bold and italic tags.</p>
+        <a href="#text">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 4: Lists</h2>
+        <p>Ordered and unordered lists.</p>
+        <a href="#list">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 5: Links</h2>
+        <p>Create hyperlinks using anchor tag.</p>
+        <a href="#link">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 6: Images</h2>
+        <p>Add images to web pages.</p>
+        <a href="#image">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 7: Tables</h2>
+        <p>Create tables using rows and columns.</p>
+        <a href="#table">Read Notes</a>
+    </div>
+    <div class="card">
+        <h2>Part 8: Forms</h2>
+        <p>Create forms to take user input.</p>
+        <a href="#form">Read Notes</a>
+    </div>
+</div>
+
+<section id="intro">
+    <h2>HTML Introduction</h2>
+    <pre>
+HTML stands for Hyper Text Markup Language.
+It is used to create web pages.
+    </pre>
+</section>
+
+<section id="structure">
+    <h2>HTML Basic Structure</h2>
+    <pre>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+</head>
+<body>
+    Content here
+</body>
+</html>
+    </pre>
+</section>
+
+<section id="text">
+    <h2>Text Formatting Tags</h2>
+    <pre>
+<h1>Main Heading</h1>
+<p>This is a paragraph</p>
+<b>Bold</b> <i>Italic</i>
+    </pre>
+</section>
+
+<section id="list">
+    <h2>Lists</h2>
+    <pre>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
+    </pre>
+</section>
+
+<section id="link">
+    <h2>Links</h2>
+    <pre>
+<a href="https://example.com">Visit Site</a>
+    </pre>
+</section>
+
+<section id="image">
+    <h2>Images</h2>
+    <pre>
+<img src="image.jpg" alt="My Image">
+    </pre>
+</section>
+
+<section id="table">
+    <h2>Tables</h2>
+    <pre>
+<table border="1">
+<tr><th>Name</th><th>Age</th></tr>
+<tr><td>Amit</td><td>20</td></tr>
+</table>
+    </pre>
+</section>
+
+<section id="form">
+    <h2>Forms</h2>
+    <pre>
+<form>
+  <input type="text" placeholder="Name">
+  <input type="submit">
+</form>
+    </pre>
+</section>
+
+<footer>
+    <p>© 2026 EduLearn | HTML Made Easy</p>
+</footer>
+
+</body>
+</html>
